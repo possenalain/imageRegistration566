@@ -67,5 +67,3 @@ The results show that our model is able to register IR images to RGB with reason
 Our approach does not use iterative Lucas-Kanade algorithm to find the transformation parameters, instead we use a Deep Learning approach to find the transformation parameters directly.
 which is  and faster than the iterative approach.
 ## References
-
-[1]...

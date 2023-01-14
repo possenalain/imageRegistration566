@@ -1,7 +1,9 @@
+
+![Image registration](registered-51.png)
+
 ## Image Registration
 
-
-I this work we use Deep Learning to perform multi-modal image registration.
+In this work we use Deep Learning to perform multi-modal image registration.
 
 Image Registration is the process of finding motion parameters between two images. 
 Those parameters will then be used to warp one image to the other.
@@ -59,10 +61,11 @@ python test.py
 | mhn | 169.07957261124898 | 112.20111584763956 | 79.58358001708984 | 150.19924545288086 | 160.55944061279297 | 170.4832763671875 | 5155.302734375 |
 | **M70** | 145.3518497891957 | **23.03793943951943** | 84.47472381591797 | 138.02655029296875 | 144.6538314819336 | 151.15814208984375 | 1601.10302734375 |
 | **M120**  | 145.76519307982787 | **8.750537040499681** | 118.6453857421875 | 139.4173126220703 | 145.77223205566406 | 151.84590911865234 | **173.41989135742188** |
-| **M175** | 145.1455664184723 | 8.59215348896344 | 118.56593322753906 | 138.96845245361328 | 145.21278381347656 | 151.22668838500977 | **172.32846069335938** |
+| **M175** | 145.1455664184723 | **8.59215348896344** | 118.56593322753906 | 138.96845245361328 | 145.21278381347656 | 151.22668838500977 | **172.32846069335938** |
 
 The results show that our model is able to register IR images to RGB with reasonable accuracy. other models often overshoot the transformation parameters and the results are not accurate.
-
+Our approach does not use iterative Lucas-Kanade algorithm to find the transformation parameters, instead we use a Deep Learning approach to find the transformation parameters directly.
+which is  and faster than the iterative approach.
 ## References
 
 [1]...

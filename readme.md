@@ -35,7 +35,21 @@ cd ImageRegistration566/
 conda env create -f environment.yaml
 ```
 
-3. training
+3. Dataset
+
+    SkyData dataset used can be found at [Dataset](https://drive.google.com/file/d/1oQ7agQSPr82wouFs2YT56pOx4Ij4LoI3/view?usp=share_link)
+
+    Download and extract the files in Dataset folder.
+    the images are already in a proper format for training and testing.
+
+
+- training rgb images are in Dataset/SkyData/train_input folder
+- training ir images are in Dataset/SkyData/train_template folder
+- validation rgb images are in Dataset/SkyData/val_input folder
+- validation ir images are in Dataset/SkyData/val_template folder
+
+
+4. Training
 
 ```bash
 cd model/
